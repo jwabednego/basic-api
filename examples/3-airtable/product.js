@@ -4,7 +4,7 @@ const fetchProducts = async () => {
   result.innerHTML = `<h1> Loading... </h1>`;
   try {
     const id = window.location.search;
-    const { data } = await axios.get(`/api/4-products/${id}`);
+    const { data } = await axios.get(`/api/5-complete/${id}`);
     const { name, desc, price, image } = data.fields;
     result.innerHTML = `  <h1 class="title">${name}</h1>
   <article class="product">
